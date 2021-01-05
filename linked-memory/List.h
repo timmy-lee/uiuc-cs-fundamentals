@@ -1,6 +1,6 @@
 /**
  * Simple linked-memory, templated list class.
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
@@ -53,7 +53,7 @@ class List {
     };
 
     ListNode *head_;   /*< Head pointer for our List */
-    
+
     ListNode* _find(const T & data);
 };
 

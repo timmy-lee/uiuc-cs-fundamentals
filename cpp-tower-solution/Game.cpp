@@ -10,7 +10,7 @@ using std::endl;
 // Game default constructor
 Game::Game() {
   // The initial default game state has three stacks four cubes.
-  
+
   // Create the three empty stacks:
   for (int i = 0; i < 3; i++) {
     Stack stackOfCubes;
@@ -52,15 +52,18 @@ void Game::_legalMove(unsigned index1, unsigned index2) {
       _move(index2, index1);
     }
   }
-  
+
   cout << *this << endl;
 }
 
 void Game::solve() {
+  int rounds = 0;
   while (stacks_[2].size() != 4) {
     _legalMove(0, 1);
     _legalMove(0, 2);
     _legalMove(1, 2);
+    rounds++;
+    cout << "Round: " << rounds << endl;
   }
 }
 

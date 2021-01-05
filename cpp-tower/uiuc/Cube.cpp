@@ -1,6 +1,6 @@
 /**
  * Simple C++ class for representing a Cube (with constructors).
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
@@ -9,7 +9,7 @@
 #include "HSLAPixel.h"
 #include <iostream>
 
-namespace uiuc {  
+namespace uiuc {
   Cube::Cube(double length, uiuc::HSLAPixel color) {
     length_ = length;
     color_ = color;

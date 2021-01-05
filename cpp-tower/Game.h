@@ -1,6 +1,6 @@
 /**
  * C++ class for a game of the Tower of Hanoi puzzle.
- * 
+ *
  * @author
  *   Wade Fagen-Ulmschneider <waf@illinois.edu>
  */
@@ -20,4 +20,6 @@ class Game {
 
   private:
     std::vector<Stack> stacks_;
+    void _legalMove(unsigned a, unsigned b);
+    void _move(unsigned a, unsigned b);
 };
